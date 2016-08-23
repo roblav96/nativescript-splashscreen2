@@ -1,7 +1,7 @@
 {
 	"name": "nativescript-splashscreen2",
 	"version": "1.0.0",
-	"description": "A Nativescript plugin that wraps AwesomeSplash for Android and SKSplashView for iOS",
+	"description": "idk",
 	"main": "splashscreen2.js",
 	"typings": "index.d.ts",
 	"nativescript": {
@@ -15,15 +15,12 @@
 		"url": "https://github.com/roblav96/nativescript-splashscreen2.git"
 	},
 	"keywords": [
-		"nativescript",
-		"splashscreen",
-		"ecosystem:nativescript",
-		"nativescript-android",
-		"nativescript-ios"
+		"NativeScript",
+		"splashscreen2"
 	],
 	"author": {
 		"name": "Robert Laverty",
-		"email": "roblav96@gmail.com"
+		"email": "roblav96@gmx.com"
 	},
 	"license": {
 		"type": "MIT",
@@ -36,10 +33,14 @@
 	"readmeFilename": "README.md",
 	"scripts": {
 		"build": "tsc",
-		"demo.ios": "npm run preparedemo && cd demo && tns run ios",
-		"demo.android": "npm run preparedemo && cd demo && tns run android",
+		"demo.ios": "npm run preparedemo && cd demo && tns livesync ios --watch",
+		"demo.android": "npm run preparedemo && cd demo && tns livesync android --watch",
+		"debug.ios": "npm run preparedemo && cd demo && tns debug ios --emulator",
+		"debug.android": "npm run preparedemo && cd demo && tns debug android --emulator",
 		"preparedemo": "npm run build && cd demo && tns plugin remove nativescript-splashscreen2 && tns plugin add .. && tns install",
-		"setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+		"setup": "cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd ..",
+		"prepublish": "tsc",
+		"start": "npm run demo.ios"
 	},
 	"devDependencies": {
 		"tns-core-modules": "^2.2.0",
