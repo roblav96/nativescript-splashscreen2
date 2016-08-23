@@ -5,6 +5,7 @@
         "removeComments": true,
         "experimentalDecorators": true,
         "noEmitHelpers": true,
+        "noEmitOnError": false,
         "declaration": true
     },
     "files": [
@@ -12,9 +13,8 @@
       "node_modules/tns-platform-declarations/tns-core-modules/android17.d.ts",
       "node_modules/tns-platform-declarations/tns-core-modules/ios.d.ts",
       "node_modules/tns-platform-declarations/tns-core-modules/org.nativescript.widgets.d.ts",
-      "yourplugin.common.ts",
-      "yourplugin.android.ts", 
-      "yourplugin.ios.ts"
+      "splashscreen2.android.ts", 
+      "splashscreen2.ios.ts"
     ],
     "compileOnSave": false
 }

@@ -1,7 +1,7 @@
 {
 	"name": "nativescript-splashscreen2",
 	"version": "1.0.0",
-	"description": "A Nativescript plugin for splashscreen2's Push Notifications SDK",
+	"description": "A Nativescript plugin that wraps AwesomeSplash for Android and SKSplashView for iOS",
 	"main": "splashscreen2.js",
 	"typings": "index.d.ts",
 	"nativescript": {
@@ -22,7 +22,7 @@
 		"nativescript-ios"
 	],
 	"author": {
-		"name": "Rob Laverty",
+		"name": "Robert Laverty",
 		"email": "roblav96@gmail.com"
 	},
 	"license": {

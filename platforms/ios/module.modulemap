@@ -1,0 +1,7 @@
+framework module SKSplashView {
+	umbrella header "SKSplashView.h"
+	umbrella header "SKSplashIcon.h"
+	export *
+	module * { export * }
+}
+
